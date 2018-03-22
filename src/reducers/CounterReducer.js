@@ -1,10 +1,8 @@
 const CounterReducer = (state = 0, action) => {
   switch (action.type) {
     case "INCREMENT":
-      //state = { ...state, name: action.payload };
       return state + 1;
     case "DECREMENT":
-      //state = { ...state, age: action.payload };
       return state - 1;
     default:
       return state;
@@ -12,3 +10,15 @@ const CounterReducer = (state = 0, action) => {
 };
 
 export default CounterReducer;
+
+//or alternate way
+// export function CounterReducer(state = 0, action){
+//   switch (action.type) {
+//     case "INCREMENT":
+//       return state + 1;
+//     case "DECREMENT":
+//       return state - 1;
+//     default:
+//       return state;
+//   }
+// }
