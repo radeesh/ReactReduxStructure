@@ -1,2 +1,0 @@
-# ReactReduxStructure
-Created with CodeSandbox
